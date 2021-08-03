@@ -1,0 +1,13 @@
+Forgot Password -leads to username enumaration 
+
+
+username:elliot/ELLIOT
+case insensitive
+
+
+####ERROR: The password you entered for the username elliot is incorrect. Lost your password?####
+
+passwd: ER28-0652
+
+
+

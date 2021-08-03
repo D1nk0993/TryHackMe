@@ -1,0 +1,402 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.18
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://10.10.237.25/ [10.10.237.25]
+[32m[+][0m Started: Sat Jul 31 00:09:16 2021
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache
+ |  - X-Mod-Pagespeed: 1.9.32.3-4523
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m robots.txt found: http://10.10.237.25/robots.txt
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://10.10.237.25/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://10.10.237.25/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.3.1 identified (Insecure, released on 2015-09-15).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://10.10.237.25/2e0d981.html, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://10.10.237.25/2e0d981.html, Match: 'WordPress 4.3.1'
+
+[32m[+][0m WordPress theme in use: twentyfifteen
+ | Location: http://10.10.237.25/wp-content/themes/twentyfifteen/
+ | Last Updated: 2021-07-22T00:00:00.000Z
+ | Readme: http://10.10.237.25/wp-content/themes/twentyfifteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 3.0
+ | Style URL: http://10.10.237.25/wp-content/themes/twentyfifteen/style.css?ver=4.3.1
+ | Style Name: Twenty Fifteen
+ | Style URI: https://wordpress.org/themes/twentyfifteen/
+ | Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, st...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 1.3 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://10.10.237.25/wp-content/themes/twentyfifteen/style.css?ver=4.3.1, Match: 'Version: 1.3'
+
+
+[34m[i][0m No plugins Found.
+
+
+[34m[i][0m No themes Found.
+
+
+[34m[i][0m No Timthumbs Found.
+
+
+[34m[i][0m No Config Backups Found.
+
+
+[34m[i][0m No DB Exports Found.
+
+
+[34m[i][0m Medias(s) Identified:
+
+[32m[+][0m http://10.10.237.25/?attachment_id=1
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=2
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=3
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=4
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=5
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=6
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=7
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=8
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=9
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=10
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=11
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=12
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=13
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=14
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=15
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=16
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=17
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=18
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=19
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=20
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=21
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=22
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=23
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=24
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=25
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=26
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=27
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=28
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=29
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=30
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=31
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=32
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=33
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=34
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=35
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=36
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=37
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=38
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=39
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=40
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=41
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=42
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=43
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=44
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=45
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=46
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=47
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=48
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=49
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=50
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=51
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=52
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=53
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=54
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=55
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=56
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=57
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=58
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=59
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=60
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=61
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=62
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=63
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=64
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=65
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=66
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=67
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=68
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=69
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=70
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=71
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=72
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=73
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=74
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=75
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=76
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=77
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=78
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=79
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=80
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=81
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=82
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=83
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=84
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=85
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=86
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=87
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=88
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=89
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=90
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=91
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=92
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=93
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=94
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=95
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=96
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=97
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=98
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=99
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+[32m[+][0m http://10.10.237.25/?attachment_id=100
+ | Found By: Attachment Brute Forcing (Aggressive Detection)
+
+
+[34m[i][0m No Users Found.
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Sat Jul 31 00:10:35 2021
+[32m[+][0m Requests Done: 3300
+[32m[+][0m Cached Requests: 13
+[32m[+][0m Data Sent: 1.697 MB
+[32m[+][0m Data Received: 1.286 MB
+[32m[+][0m Memory used: 270 MB
+[32m[+][0m Elapsed time: 00:01:18
