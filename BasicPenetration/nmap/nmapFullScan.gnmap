@@ -1,0 +1,1 @@
+# Nmap 7.91 scan initiated Tue Aug  3 14:44:34 2021 as: nmap -sV -sC -p- -oA ./nmapFullScan 10.10.217.112
